@@ -17,8 +17,13 @@ const Login = (props) => {
   return (
     <section className="login">
       <div className="loginContainer">
-        <h1 className="">Geo Locater</h1>
-        <label>Email</label>
+        <h1>
+          <i class="fa fa-map" aria-hidden="true"></i> Geo Locater{" "}
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </h1>
+        <label>
+          <i class="fa fa-envelope" aria-hidden="true"></i> Email
+        </label>
         <input
           type="text"
           autoFocus
@@ -29,7 +34,10 @@ const Login = (props) => {
 
         <p className="errorMsg">{emailError} </p>
 
-        <label>Password</label>
+        <label>
+          {" "}
+          <i class="fa fa-key" aria-hidden="true"></i> Password
+        </label>
         <input
           type="password"
           autoFocus
